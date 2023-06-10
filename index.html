@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eintragen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>MCG Foederverein</title>
 </head>
 <body>
+    <div class="background"></div>
+    <div class="logo-container">
+        <img class="logo :mg" src="logo_2_web-1.png" alt="Logo">
+        <span class="logo-caption">Förderverein Spenden</span>
+    </div>
     <form action="entry.php" method="post">
-        <label for="vorname">Vorname:</label><br>
-        <input type="text" id="vorname" name="vorname" required><br>
-        <label for="nachname">Nachname:</label><br>
-        <input type="text" id="nachname" name="nachname" required><br><br>
-        <label for="email">E-Mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="betrag">Betrag (in €):</label><br>
-        <input type="number" id="betrag" name="betrag" required min="1" max="10000"><br><br>
-        <input type="submit" value="Submit">
-      </form>
+        <input type="text" id="vorname" name="vorname" placeholder="Vorname" required><br><br>
+        <input type="text" id="nachname" name="nachname" placeholder="Nachname" required><br><br>
+        <input type="email" id="email" name="email" placeholder="E-Mail" required><br><br>
+        <input type="number" id="betrag" name="betrag" placeholder="Betrag in €" required min="1" max="10000"><br><br>
+        <input type="submit" value="Bestätigen">
+    </form>
 </body>
 </html>
